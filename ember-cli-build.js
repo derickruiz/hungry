@@ -7,8 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
-  app.import('/vendor/jquery-3.1.0.min.js');
-
+  app.import('vendor/jquery-3.1.0.min.js');
+  app.import('vendor/owl.carousel.min.js');
+  
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

@@ -1,4 +1,13 @@
 {{#link-to "meal" id}}
+
+  {{#if (eq available_quantity 0) }}
+  <div class="banner">
+      <div class="line">
+          <span>Sold out</span>
+      </div>
+  </div>
+  {{/if}}
+  
   <div class="Meal-photo">
       <img src="{{photo}}" alt="Photo of {{description}}">
   </div>
@@ -11,7 +20,7 @@
       <div class="Meal-name">{{name}}</div>
       <div class="Meal-location">{{location}}</div>
       <div class="Meal-description">
-        <div class="Meal-price">{{price}}</div>
+        <div class="Meal-price">{{money-format price}}</div>
         <div class="Meal-rating">
             {{#if (eq rating 0) }}
             {{else}}

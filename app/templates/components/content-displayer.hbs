@@ -1,25 +1,24 @@
-<div class="Displayer">
-    {{#if title}}
-        <div class="Displayer-title">{{title}}</div>
+
+{{#if title}}
+    <div class="Displayer-title">{{title}}</div>
+{{/if}}
+
+{{#if photo_url}}
+    <div class="Displayer-image">
+        <img src="{{photo_url}}">
+    </div>
+{{/if}}
+
+<div class="Displayer-content">
+    {{#if contentTitle}}
+        <div class="Displayer-contentTitle">{{contentTitle}}</div>
     {{/if}}
 
-    {{#if photo_url}}
-        <div class="Displayer-image">
-            <img src="{{photo_url}}">
+    {{#if contentDescription}}
+        <div class="Displayer-contentDescription">
+            <p>{{contentDescription}}</p>
         </div>
     {{/if}}
-
-    <div class="Displayer-content">
-        {{#if contentTitle}}
-            <div class="Displayer-contentTitle">{{contentTitle}}</div>
-        {{/if}}
-
-        {{#if contentDescription}}
-            <div class="Displayer-contentDescription">
-                <p>{{contentDescription}}</p>
-            </div>
-        {{/if}}
-    </div>
 </div>
 
 {{yield}}

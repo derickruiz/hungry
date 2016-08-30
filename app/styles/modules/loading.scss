@@ -13,24 +13,22 @@
 }
 
 .Loading-contents > *+* {
-  margin-top: 1rem;
+  margin-top: $scale-default;
+}
+
+.Loading-description,
+.Loading-spinner {
+    text-align: center;
 }
 
 .Loading-description {
-  text-align: center;
-  color: rgba(186,29,79,0.95);
-  font-family: "Helvetica Neue", Helvetica;
-
-}
-
-.Loading-spinner {
-  text-align: center;
+  color: $primary-color;
 }
 
 .Loading-spinner > .dot {
-  width: 0.618rem;
-  height: 0.618rem;
-  background-color: rgba(186,29,79,0.95);
+  width: $scale-one-down;
+  height: $scale-one-down;
+  background-color: $primary-color;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;

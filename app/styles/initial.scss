@@ -16,9 +16,10 @@ a {
 main {
     position: relative;
     display: block;
-    max-width: 480px;
+    max-width: 480px; // Want to keep it at a mobile size for now.
     width: 100%;
     min-height: 100vh;
+    padding-bottom: $scale-two-up;
     margin: 0 auto;
 }
 

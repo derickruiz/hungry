@@ -1,29 +1,23 @@
-.DisplayItems {
-    margin-top: 1rem;
-}
-
-.DisplayItems > .Displayer + .Displayer {
-    margin-top: 1rem;
-}
-
-.Displayer-image > img {
-  display: block;
-  width: 100%;
-  height: auto;
+.DisplayItems,
+.DisplayItems > *+*,
+.Displayer-content {
+    margin-top: $scale-default;
 }
 
 .Displayer-title {
-    background: rgba(186,29,79,0.95);
-    background: -webkit-linear-gradient(left, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
-    background: -o-linear-gradient(right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
-    background: -moz-linear-gradient(right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
-    background: linear-gradient(to right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
-    min-height: 2rem;
-    padding-top: 0.3rem;
-    padding-left: 1rem;
-    color: #fff;
+    background: $primary-color;
+    background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
+    background: -o-linear-gradient(right, $primary-color, $secondary-color);
+    background: -moz-linear-gradient(right, $primary-color, $secondary-color);
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    min-height: $scale-two-up;
+    padding-top: 0.5rem;
+    padding-left: $scale-default;
+    color: $default-color;
 }
 
-.Displayer-content {
-  margin-top: 1rem;
+.Displayer-contentTitle {
+    font-size: $scale-one-up;
+    line-height: 1.2;
+    text-align: center;
 }

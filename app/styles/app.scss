@@ -1,9 +1,12 @@
 @import 'foundation';
-@import 'initial';
 @import 'variables';
+@import 'initial';
 
-// Modules
+// Lower level modules
 @import 'modules/logo';
+@import 'modules/button';
+
+// Higher level modules
 @import 'modules/loading';
 @import 'modules/meal-item';
     @import 'modules/banner';

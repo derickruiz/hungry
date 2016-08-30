@@ -1,3 +1,11 @@
+.DisplayItems {
+    margin-top: 1rem;
+}
+
+.DisplayItems > .Displayer + .Displayer {
+    margin-top: 1rem;
+}
+
 .Displayer-image > img {
   display: block;
   width: 100%;

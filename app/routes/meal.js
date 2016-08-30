@@ -16,7 +16,6 @@ export default Ember.Route.extend({
 
             modifiedRaw.forEach(function (entry) {
                 if (id === entry.menu_items[0].id) {
-                    console.log("Is id matching up?");
                     returnObj.menuItem = entry.menu_items[0];
                     returnObj.chef = entry.chef;
                     returnObj.ingredients = {
@@ -27,8 +26,18 @@ export default Ember.Route.extend({
                 }
             });
 
-            return returnObj;
+            if (! returnObj["menuItem"]) {
+                this.transitionTo('/not-found');
+            } else {
+                return returnObj;    
+            }
 
         });
+    },
+
+    actions: {
+        error: function (error) {
+            this.transitionTo('/not-found');
+        }
     }
 });

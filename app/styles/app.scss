@@ -1,44 +1,9 @@
 @import 'foundation';
+@import 'initial';
 @import 'variables';
 
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-main {
-    position: relative;
-    display: block;
-    max-width: 480px;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-}
-
-img {
-  max-width: 100%; // responsive images
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul > li {
-  list-style-type: none;
-}
-
 // Modules
+@import 'modules/logo';
 @import 'modules/loading';
 @import 'modules/meal-item';
     @import 'modules/banner';

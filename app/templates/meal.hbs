@@ -1,2 +1,4 @@
-{{meal-carousel}}
+{{content-displayer title="Description" photo_url=model.menuItem.images.[0].url contentTitle=model.menuItem.name contentDescription=model.menuItem.description}}
+{{content-displayer title="Ingredients" photo_url=model.ingredients.ingredients_image.url contentDescription=model.ingredients.ingredients_text }}
+{{content-displayer title="About The Chef" photo_url=model.chef.chef_profile.image.url contentTitle=model.chef.name contentDescription=model.chef.chef_profile.description}}
 {{outlet}}

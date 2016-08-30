@@ -8,10 +8,7 @@ module.exports = function(defaults) {
   });
 
   app.import('vendor/jquery-2.2.4.min.js');
-
-  app.import('vendor/owl.carousel.min.js');
-  app.import('vendor/owl.carousel.min.css');
-  app.import('vendor/owl.theme.default.min.css');
+  
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

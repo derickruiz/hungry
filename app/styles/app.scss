@@ -1,0 +1,45 @@
+@import 'foundation';
+@import 'variables';
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+    position: relative;
+    display: block;
+    width: 480px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+img {
+  max-width: 100%; // responsive images
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+// Modules
+@import 'modules/loading';
+@import 'modules/meal-item';
+@import 'modules/meal-carousel';

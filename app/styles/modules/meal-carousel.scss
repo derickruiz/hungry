@@ -1,0 +1,32 @@
+.Displayer-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.Dots {
+  width: 100%;
+  overflow: hidden;
+
+  position: absolute;
+  bottom: 9rem;
+  left: 0;
+  z-index: 200;
+}
+
+.Dot {
+  float: left;
+  width: 33.33%;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 2rem;
+  padding-top: 1rem;
+
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+
+  cursor: pointer;
+}

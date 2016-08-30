@@ -1,0 +1,77 @@
+.Meals .Meal + .Meal {
+    margin-top: 1rem;
+}
+
+.Meal {
+  position: relative;
+}
+
+.Meal-photo::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+75,000000+75,000000+100&0+72,0.65+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 72%, rgba(0,0,0,0.07) 75%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 72%,rgba(0,0,0,0.07) 75%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 72%,rgba(0,0,0,0.07) 75%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.Meal-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 300;
+  padding: 0.618rem;
+}
+
+.Meal-description {
+  margin-top: 0.618rem;
+}
+
+.Meal-description > div {
+  display: inline-block;
+}
+
+.Meal-price {
+  margin-right: 1rem;
+}
+
+.Meal-rating > img {
+  color: green;
+  width: 0.8rem;
+  height: 0.8rem;
+  display: inline;
+}
+
+.Meal-location {
+  margin-top: 0.236rem;
+}
+
+.Meal-location,
+.Meal-numberOfRatings {
+  font-size: 0.8rem;
+}
+
+.Meal-numberOfRatings {
+  color: grey;
+}
+
+.Meal-chef {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 200;
+}
+
+.Meal-chef > img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}

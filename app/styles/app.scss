@@ -7,8 +7,6 @@ html {
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial;
-    color: #fff;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -43,3 +41,4 @@ ul > li {
 @import 'modules/loading';
 @import 'modules/meal-item';
 @import 'modules/meal-carousel';
+@import 'modules/displayer';

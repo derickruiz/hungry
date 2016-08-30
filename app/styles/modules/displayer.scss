@@ -1,0 +1,21 @@
+.Displayer-image > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.Displayer-title {
+    background: rgba(186,29,79,0.95);
+    background: -webkit-linear-gradient(left, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
+    background: -o-linear-gradient(right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
+    background: -moz-linear-gradient(right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
+    background: linear-gradient(to right, rgba(186,29,79,0.95), rgba(239,82,62,0.95));
+    min-height: 2rem;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.Displayer-content {
+  margin-top: 1rem;
+}

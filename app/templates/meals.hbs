@@ -1,7 +1,10 @@
+{{log model}}
+
 <div class="Meals">
     {{#each model as |meal|}}
         {{meal-item
             photo=meal.images.[0].url
+            available_quantity=meal.scheduled_offerings.[0].available_quantity
             name=meal.name
             description=meal.description
             price=meal.price

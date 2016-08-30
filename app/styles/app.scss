@@ -19,7 +19,8 @@ a {
 main {
     position: relative;
     display: block;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -40,5 +41,5 @@ ul > li {
 // Modules
 @import 'modules/loading';
 @import 'modules/meal-item';
-@import 'modules/meal-carousel';
+    @import 'modules/banner';
 @import 'modules/displayer';

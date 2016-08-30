@@ -1,7 +1,8 @@
 <div class="Meals">
-    {{#each menuItems as |meal|}}
+    {{#each model as |meal|}}
         {{meal-item
             photo=meal.images.[0].url
+            name=meal.name
             description=meal.description
             price=meal.price
             rating=meal.rating

@@ -1,0 +1,26 @@
+.button {
+    border: none;
+    background: none;
+
+    min-height: $scale-two-up;
+    border-radius: $default-radius;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.button.button-full {
+    width: 100%;
+}
+
+.button.button-primary {
+    background-color: $primary-color;
+    color: $default-color;
+}
+
+.button.button-muted {
+    color: $muted-color;
+    background-color: $lightly-muted-color;
+    cursor: disabled;
+}

@@ -1,0 +1,6 @@
+{{#if (eq available 0)}}
+<button class="button button-muted button-full" disabled="disabled">Sold out!</button>
+{{else}}
+<button class="button button-primary button-full">Order Now | {{money-format price}} per meal </button>
+{{/if}}
+{{yield}}

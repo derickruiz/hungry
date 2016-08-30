@@ -9,7 +9,7 @@ const MealItemComponent = Ember.Component.extend({
 });
 
 MealItemComponent.reopenClass({
-  positionalParams: ['photo', 'available_quantity', 'name', 'description', 'price', 'rating', 'reviews_count', 'id']
+  positionalParams: ['photo', 'available_quantity', 'chef_photo', 'name', 'description', 'price', 'rating', 'reviews_count', 'id']
 });
 
 export default MealItemComponent;

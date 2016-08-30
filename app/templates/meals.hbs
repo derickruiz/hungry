@@ -1,10 +1,12 @@
-{{#each model.menu_items as |meal|}}
-    {{meal-item
-        photo_url=meal.images[0].url
-        description=meal.description
-        price=meal.price
-        rating=meal.rating
-        reviews_count=meal.reviews_count }}
-{{/each}}
-
+<div class="Meals">
+    {{#each menuItems as |meal|}}
+        {{meal-item
+            photo=meal.images.[0].url
+            description=meal.description
+            price=meal.price
+            rating=meal.rating
+            reviews_count=meal.reviews_count
+            id=meal.id}}
+    {{/each}}
+</div>
 {{outlet}}
